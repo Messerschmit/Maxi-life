@@ -1,13 +1,16 @@
 *{
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
 body{
-  max-width: 960px;
+  width:90%;
   margin: 0 auto;
 
-  background: #f8fafa url("../img/bg_grid.jpg") no-repeat center;
+  background: #191919 url("../img/bg_grid.jpg") no-repeat center;
   color: #505050;
 
   font-size: 100%/1.5em;
@@ -17,23 +20,27 @@ body{
 }
 
 /*фикс для родительского div*/
-.clear:before,
-.clear:after{
+.clear-fix:before,
+.clear-fix:after{
 	content: "";
 	display: table;
 }
 
-.clear:after{
+.clear-fix:after{
 	clear: both;
 }
 
 .container{
-  width: 81.25%;
+  width: 81.25%; /*780px / 960px*/
   margin: 0 auto;
 
   /*удалить после верстки*/
   border: 1px solid black;
-  min-height: 5480px;
+  min-height: 342.5em /*5260px / 16px*/;
+}
+
+.container .cols{
+  float: left;
 }
 /*fluid grid*/
 .container .cols.col-1{width: 8.333333333333333%;}
@@ -52,38 +59,116 @@ body{
 .say-hello{
   /*удалить после верстки*/
   border: 1px solid red;
-  height: 520px;
+  height: 38.125em; /*610px / 16px*/
 }
 
 header{
-  margin-bottom: 20px;
+  margin-bottom: 1.25em; /*20px / 16px*/
   /*удалить после верстки*/
   border: 1px solid blue;
-  height: 180px;
+  height: 11.5625em;
 }
 
 .logo{
   float:left;
-  margin-left: 10px;
-  margin-top: 20px;
-  width:33.3333%;
+  margin-left: 1.282051282051282%; /*10px / 780px*/
+  margin-top: 1.25em; /*20px / 16px*/
+  width:25%; /*195px / 780px*/
   /*удалить после верстки*/
   border: 1px solid green;
-  height: 160px;
+  height: 10.3125em;/*165px / 16px*/
 }
 
 .main-menu{
   float:right;
-  width: 9.6154%;
-  margin-top: 50px;
+  width: 9.615384615384615%; /*75px / 780px*/
+  margin-top: 3.125em; /*50px / 16px*/
 
   /*удалить после верстки*/
   border: 1px solid green;
-  height: 25px;
+  height: 1.5625em;/*25px / 16px*/
 }
 
 .main-greeting{
+  width: 95%;
+  margin: 0 auto;
   /*удалить после верстки*/
   border: 1px solid green;
   height: 125px;
+}
+
+.about-us{
+  float:left;
+  width: 100%;
+  /*удалить после верстки*/
+  border: 1px solid orange;
+  height: 40.9375em; /*655px / 16px*/
+}
+
+.about-us-headline{
+  margin-bottom: 5em; /*80px / 16px*/
+  /*удалить после верстки*/
+  border: 1px solid blue;
+  height: 3.75em;/*60px / 16px*/
+}
+
+.content{
+  float:left;
+  width: 100%;
+  /*удалить после верстки*/
+  border: 1px solid green;
+  height: 24.375em; /*390px / 16pxx*/
+}
+
+.about-us-gallery{
+  float:left;
+  /*удалить после верстки*/
+  border: 1px solid red;
+  height: 24.375em; /*390px / 16pxx*/
+}
+
+.about-us-content-right{
+  float:right;
+  /*удалить после верстки*/
+  border: 1px solid red;
+  height: 24.375em; /*390px / 16pxx*/
+}
+
+.presentation{
+  float: left;
+  width: 100%;
+  /*удалить после верстки*/
+  border: 1px solid grey;
+  height: 43.75em; /*700px / 16px*/
+}
+
+.presentation-headline{
+  margin-bottom: 5.625em; /*80px / 16px*/
+  /*удалить после верстки*/
+  border: 1px solid blue;
+  height: 2.5em;/*40px / 16px*/
+}
+
+.presentation-gallery{
+  float:left;
+  width: 100%; /*780px / 780px*/
+  /*удалить после верстки*/
+  border: 1px solid green;
+  height: 31.25em; /*500px / 16pxx*/
+}
+
+.collums{
+  float: left;
+  /*удалить после верстки*/
+  border: 1px solid blue;
+  height: 31.25em; /*485px / 16pxx*/
+}
+
+.rows{
+  float:left;
+  width: 95%;
+  margin:2%;
+  /*удалить после верстки*/
+  border: 1px solid red;
+  height: 15em; /*485px / 16pxx*/
 }
