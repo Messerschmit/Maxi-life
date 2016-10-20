@@ -8,6 +8,7 @@
 
 body{
   width:90%;
+  max-width: 960px;
   margin: 0 auto;
 
   background: #191919 url("../img/bg_grid.jpg") no-repeat center;
@@ -106,7 +107,8 @@ header{
 }
 
 .about-us-headline{
-  margin-bottom: 5em; /*80px / 16px*/
+  margin-top: 1.5625em; /*20px / 16px*/
+  margin-bottom: 2.8125em; /*80px / 16px*/
   /*удалить после верстки*/
   border: 1px solid blue;
   height: 3.75em;/*60px / 16px*/
@@ -143,10 +145,11 @@ header{
 }
 
 .presentation-headline{
-  margin-bottom: 5.625em; /*80px / 16px*/
+  margin-top:1.5625em; /*20px / 16px*/
+  margin-bottom: 4.0625em; /*65px / 16px*/
   /*удалить после верстки*/
   border: 1px solid blue;
-  height: 2.5em;/*40px / 16px*/
+  height: 2.5em; /*40px / 16px*/
 }
 
 .presentation-gallery{
@@ -154,21 +157,97 @@ header{
   width: 100%; /*780px / 780px*/
   /*удалить после верстки*/
   border: 1px solid green;
-  height: 31.25em; /*500px / 16pxx*/
+  height: 31.25em; /*500px / 16px*/
 }
 
 .collums{
   float: left;
   /*удалить после верстки*/
   border: 1px solid blue;
-  height: 31.25em; /*485px / 16pxx*/
+  height: 31.25em; /*485px / 16px*/
 }
 
-.rows{
+.cell{
   float:left;
   width: 95%;
   margin:2%;
   /*удалить после верстки*/
   border: 1px solid red;
-  height: 15em; /*485px / 16pxx*/
+  height: 15em; /*240px / 16px*/
+}
+
+.services{
+  float:left;
+  /*удалить после верстки*/
+  border: 1px solid red;
+  height: 67.5em; /*1080px / 16px*/
+}
+
+.services-headline{
+  margin-top: 2.8125em; /*45px / 16px*/
+
+  /*удалить после верстки*/
+  border: 1px solid blue;
+  height: 2.5em; /*40px / 16px*/
+}
+
+.services-articles{
+  float: left;
+  width: 97.43589743589744%; /*760px / 780px*/
+  margin: 0 1.282051282051282%; /*10px / 780px*/
+  margin-top: 7.8125em; /*125px / 16px*/
+
+  /*удалить после верстки*/
+  border: 1px solid green ;
+  height: 49.6875em; /*795px / 16px*/
+}
+
+.row-1{
+  /*удалить после верстки*/
+  border: 1px solid red;
+  height: 17.5em; /*280px / 16px*/
+}
+
+.row-2{
+  /*удалить после верстки*/
+  border: 1px solid red;
+  height: 15.9375em; /*255px / 16px*/
+}
+
+.team{
+  float: left;
+  width: 100%;
+  /*удалить после верстки*/
+  border: 1px solid grey;
+  height: 54.6875em; /*875px / 16px*/
+}
+
+.team-headline{
+  margin-top:4.6875em; /*75px / 16px*/
+  margin-bottom: 5.625em; /*90px / 16px*/
+  /*удалить после верстки*/
+  border: 1px solid blue;
+  height: 2.5em; /*40px / 16px*/
+}
+
+.team-collums{
+  float: left;
+  /*удалить после верстки*/
+  border: 1px solid blue;
+  height: 36.875em; /*595px / 16px*/
+}
+
+.team-cell{
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 0.625em;
+
+  /*удалить после верстки*/
+  border: 1px solid red;
+  height: 18.125em;/*290px / 16px*/
+}
+
+.team-cell:last-child{
+  margin-bottom: 0;
+  border-color: black;
 }
