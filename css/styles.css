@@ -251,3 +251,79 @@ header{
   margin-bottom: 0;
   border-color: black;
 }
+
+.reviews{
+  width: 0.9743589743589744%; /*760px / 780px*/
+  /*удалить после верстки*/
+  border: 1px solid red;
+  height: 38.75em;/*620px / 16px*/
+}
+
+.reviews-headline{
+  margin-top:4.6875em; /*75px / 16px*/
+  margin-bottom: 5.65em; /*100px / 16px*/
+  /*удалить после верстки*/
+  border: 1px solid blue;
+  height: 2.5em; /*40px / 16px*/
+}
+
+.reviews-gallery{
+  float: left;
+  margin-left: 1.315789473684211%;
+  /*удалить после верстки*/
+  border: 1px solid green;
+  height: 20.3125em; /*315px / 16px*/
+}
+
+.reviews-content{
+  margin-left: 6.578947368421053%;
+  /*удалить после верстки*/
+  border: 1px solid green;
+  height: 20.3125em; /*315px / 16px*/
+}
+
+.partners{
+  /*удалить после верстки*/
+  border: 1px solid green;
+  height: 16.875em; /*260px / 16px*/
+}
+
+.contacts{
+  /*удалить после верстки*/
+  border: 1px solid green;
+  height: 28.75em; /*460px / 16px*/
+}
+
+.contacts-form{
+  width: 52.63157894736842%; /*410 px / 760 px*/
+  margin: 0 auto;
+  margin-top: 0.9375em; /*15px / 16px*/
+
+  /*удалить после верстки*/
+  border: 1px solid green;
+  height: 19.0625em; /*305px / 16 px*/
+}
+
+.main-footer{
+  /*удалить после верстки*/
+  border: 1px solid white;
+  height: 13.125em; /*210 px / 16px */
+}
+
+.footer-social{
+  margin: 0 auto;
+  margin-top: 3.4375em; /*55px / 16px*/
+  width: 19.73684210526316%; /*160px / 760px*/
+  /*удалить после верстки*/
+  border: 1px solid white;
+  height: 3.4375em; /*55px / 16px */
+}
+
+.footer-copyright{
+  width: 44.73684210526316%; /*340px / 760px*/
+  margin: 0 auto;
+  margin-top: 1.25em;/*20px / 16px*/
+  /*удалить после верстки*/
+  border: 1px solid white;
+  height: 1.5625em; /*25px / 16px */
+}
