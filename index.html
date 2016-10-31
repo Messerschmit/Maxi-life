@@ -4,29 +4,98 @@
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&amp;subset=cyrillic"
+          rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
     <title>MAXI-LIFE 3D PRINTING</title>
   </head>
     <body>
       <header class="main-header">
         <div class="container clear-fix">
           <div class="main-logo">
-            <a href="#"><img src="img/logo.png" height="125px"></a>
+            <a href="#hello"><img src="img/logo.png" height="125px"></a>
           </div>
           <nav class="main-menu">
-            
+                <a href="#hello" class="anim-menu">
+                  <span>
+                    <span>Главная</span>
+                    <span>Главная</span>
+                    <span></span>
+                  </span>
+                </a>
+
+                <a href="#about" class="anim-menu">
+                  <span>
+                    <span>О нас</span>
+                    <span>О нас</span>
+                    <span></span>
+                  </span>
+                </a>
+
+                <a href="#gallery" class="anim-menu">
+                  <span>
+                    <span>Работы</span>
+                    <span>Работы</span>
+                    <span></span>
+                  </span>
+                </a>
+
+                <a href="#services" class="anim-menu">
+                  <span>
+                    <span>Статьи</span>
+                    <span>Статьи</span>
+                    <span></span>
+                  </span>
+                </a>
+
+                <a href="#team" class="anim-menu">
+                  <span>
+                    <span>Команда</span>
+                    <span>Команда</span>
+                    <span></span>
+                  </span>
+                </a>
+
+                <a href="#reviews" class="anim-menu">
+                  <span>
+                    <span>Отзывы</span>
+                    <span>Отзывы</span>
+                    <span></span>
+                  </span>
+                </a>
+
+                <a href="#contacts" class="anim-menu">
+                  <span>
+                    <span>Контакты</span>
+                    <span>Контакты</span>
+                    <span></span>
+                  </span>
+                </a>
           </nav>
         </div>
       </header>
       <main>
-        <div class="cols col-12 say-hello">
+        <div id="hello" class="cols col-12 say-hello">
+          <div class="transparent"></div>
           <div class="container clear-fix">
             <div class="main-greeting">
+              <div class="blue-square-top"></div>
+              <div class="blue-square-bottom"></div>
+              <p>
+                Приветствуем Вас в мире 3D печати!
+              </p>
+              <p>
+                с нами двухмерные модели<br>
+                обретают мир 3D
+              </p>
             </div>
+            <a class="button outline-outward" href="#contacts">Заказать 3D печать</a>
           </div>
         </div>
-        <div class="cols col-12 about-us">
+        <div id="about" class="cols col-12 about-us">
           <div class="container clear-fix">
             <div class="cols col-12 about-us-headline">
             </div>
@@ -38,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="cols col-12 presentation">
+        <div id="gallery" class="cols col-12 presentation">
           <div class="container clear-fix">
             <div class="cols col-12 presentation-headline">
             </div>
@@ -64,7 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="cols col-12 services">
+        <div id="services" class="cols col-12 services">
           <div class="container clear-fix">
             <div class="cols col-12 services-headline">
             </div>
@@ -84,7 +153,7 @@
            </div>
           </div>
         </div>
-        <div class="team">
+        <div id="team" class="team">
           <div class="container clear-fix">
             <div class="cols col-12 team-headline">
             </div>
@@ -110,7 +179,7 @@
             </div>
           </div>
         </div>
-        <div class="cols col-12 reviews">
+        <div id="reviews" class="cols col-12 reviews">
           <div class="container clear-fix">
             <div class="reviews-headline">
             </div>
@@ -124,7 +193,7 @@
           <div class="container clear-fix">
           </div>
         </div>
-        <div class="cols col-12 contacts">
+        <div id="contacts" class="cols col-12 contacts">
           <div class="container clear-fix">
             <div class="contacts-form">
             </div>
