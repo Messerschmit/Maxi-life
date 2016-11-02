@@ -487,7 +487,7 @@ body{
   float:left;
   background: #f8fafa;
   /*удалить после верстки*/
-  height: 40.9375em; /*655px / 16px*/
+  min-height: 40.9375em; /*655px / 16px*/
 }
 
 .about-us-headline{
@@ -515,9 +515,111 @@ body{
 
 .about-us-gallery{
   margin: 0;
-  /*удалить после верстки*/
-  border: 1px solid red;
   height: 24.375em; /*390px / 16pxx*/
+}
+
+.about-us-gallery .about-us-slider{
+  position: relative;
+  margin: 0.625em auto;
+  width: 70.51282051282051%; /*275px / 390px*/
+}
+.slides .inner{
+    /*Ширина = кол-во изображений * 100%*/
+    width: 400%;
+}
+/*Аннулирование лишних изображений*/
+.inner:after{
+    content = "";
+    display: block;
+    height: 0;
+    clear: both;
+
+}
+/*Размещения блока с изображениями*/
+.page{
+    float: left;
+    /*Ширина = 100% / кол-во изображений*/
+    width: 25%;
+}
+/*размер изображения*/
+.page img{
+    width: 275px;
+    height: auto;
+}
+/*скрывать "не активные" изображения*/
+.overflow{
+    overflow: hidden;
+}
+.about-us-slider input{
+    display: none;
+}
+/*Размещение стрелок*/
+#controls{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+
+}
+/* Определение стиля стрелок*/
+#controls label{
+    display: none;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#controls label:hover{
+    opacity: 1;
+}
+
+
+/*Движение изображений. Смещение влево при выборе управляющих элементов */
+#slide1:checked ~ .slides .inner { margin-left:0;}
+#slide2:checked ~ .slides .inner { margin-left:-100%;}
+#slide3:checked ~ .slides .inner { margin-left:-200%;}
+#slide4:checked ~ .slides .inner { margin-left:-300%;}
+
+#active{
+    text-align: center;
+    margin-top: 5px;
+}
+/*Отображение радио-баттон*/
+#active label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #d0d0d0;
+    margin-right: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 100%;
+       -moz-border-radius: 100%;
+            border-radius: 100%;
+}
+
+#active label:hover{
+    background: #000000;
+}
+/*Обозначает какой млайд сейчас активный*/
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2),
+#slide3:checked ~ #active label:nth-child(3),
+#slide4:checked ~ #active label:nth-child(4),
+#slide5:checked ~ #active label:nth-child(5) {
+    background: #71f6eb;
+}
+
+.slides .inner {
+-webkit-transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+}
+
+.bg-gallery{
+  position: absolute;
+  left: 1.5%;
+  top: 34%;
+  width: 47.1%; /*320px  / 380px*/
+  background: rgba(235, 237, 236, 0.5);
+  height: 17.1875em; /*275px / 16px*/
 }
 
 .about-us-content-right{
