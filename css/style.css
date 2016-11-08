@@ -664,10 +664,22 @@ body{
 
 .presentation-headline{
   margin-top:1.5625em; /*20px / 16px*/
-  margin-bottom: 4.0625em; /*65px / 16px*/
-  /*удалить после верстки*/
-  border: 1px solid blue;
-  height: 2.5em; /*40px / 16px*/
+  margin-bottom: 3.4375em; /*65px / 16px*/
+}
+
+.presentation-headline h1{
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #505050;
+}
+
+.presentation-headline p{
+  color: #505050;
+  text-align: center;
+  font-size: 0.75em;
 }
 
 .presentation-gallery{
@@ -697,36 +709,130 @@ body{
 .services{
   float:left;
   background: #f9fbfb;
-  /*удалить после верстки*/
-  border: 1px solid red;
   height: 67.5em; /*1080px / 16px*/
 }
 
 .services-headline{
   margin-top: 2.8125em; /*45px / 16px*/
+}
 
-  /*удалить после верстки*/
-  border: 1px solid blue;
-  height: 2.5em; /*40px / 16px*/
+.services-headline h1{
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #505050;
+}
+
+.services-headline p{
+  color: #505050;
+  text-align: center;
+  font-size: 0.75em;
 }
 
 .services-articles{
   float: left;
-  margin-top: 7.8125em; /*125px / 16px*/
+  margin-top: 4.6875em; /*125px / 16px*/
   /*удалить после верстки*/
   height: 49.6875em; /*795px / 16px*/
 }
 
+.services-articles .services-articles-style{
+  position: relative;
+  margin-top: 0.625em;/*10px / 16px*/
+  text-transform: none;
+}
+.services-articles .bg-services-1{
+  background: #7d7d7d url("../img/bg-articles1.jpg") no-repeat;
+
+}
+
+.services-articles .bg-services-2{
+  background: #7d7d7d url("../img/bg-articles2.jpg") no-repeat;
+
+}
+
+.services-articles .bg-services-3{
+  background: #7d7d7d url("../img/bg-articles3.jpg") no-repeat;
+
+}
+
+.services-articles .bg-services-4{
+  background: #7d7d7d url("../img/bg-articles4.jpg") no-repeat;
+
+}
+
+.services-articles .bg-services-5{
+  background: #7d7d7d url("../img/bg-articles5.jpg") no-repeat;
+
+}
+
+.services-articles .bg-services-6{
+  background: #7d7d7d url("../img/bg-articles6.jpg") no-repeat;
+
+}
+.even{
+  margin-left: 10px;
+}
+
+.services-articles-style h3{
+  display: inline-block;
+  margin-top: 0.625em; /*10px / 16px*/
+  margin-left: 5.263157894736842%; /*20px / 380px*/
+  padding-right: 3%;
+  font-size: 0.875em;
+  font-weight: 700;
+  text-transform:uppercase;
+  color: #e7e4e4;
+}
+
+.services-articles-style p{
+  margin-top: 0.625em; /*10px / 16px*/
+  margin-left: 5.263157894736842%; /*20px / 380px*/
+  padding-right: 3%;
+  color: #e7e4e4;
+  font-size: 0.75em;
+}
+
+.bg-services-1 h3{
+  margin-top: 40px;/*95px / 16px*/
+}
+
+.bg-services-3 h3{
+  margin-top: 25px;/*95px / 16px*/
+}
+
+.bg-services-4 h3{
+  margin-top: 20px;/*95px / 16px*/
+}
+
+.bg-services-5 h3{
+  margin-top: 5px;/*95px / 16px*/
+}
+
+.bg-services-6 h3{
+  margin-top: 5.9375em;/*95px / 16px*/
+}
+
 .row-1{
-  /*удалить после верстки*/
-  border: 1px solid red;
-  height: 17.5em; /*280px / 16px*/
+  min-height: 17.5em; /*280px / 16px*/
 }
 
 .row-2{
-  /*удалить после верстки*/
-  border: 1px solid red;
-  height: 15.9375em; /*255px / 16px*/
+  min-height: 15.3125em; /*245px / 16px*/
+}
+
+.services-articles-style .services-articles-layer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(109, 246, 235, 0);
+  cursor: pointer;
+}
+
+.services-articles-style .services-articles-layer:hover{
+  background-color: rgba(109, 246, 235, 0.5);
 }
 
 .team{
@@ -828,8 +934,7 @@ body{
 .main-footer{
   float: left;
   background: #262b2e;
-  /*удалить после верстки*/
-  border: 1px solid white;
+
   height: 13.125em; /*210 px / 16px */
 }
 
@@ -842,6 +947,16 @@ body{
   height: 3.4375em; /*55px / 16px */
 }
 
+.social-btn{
+  display: inline-block;
+  width: 18.75%; /*30px / 160px*/
+  height: 1.875em; /*30px / 16px*/
+  margin-left: 5px;
+  margin-top: 10px;
+
+  border: 1px solid white;
+}
+
 .footer-copyright{
   width: 44.73684210526316%; /*340px / 760px*/
   margin: 0 auto;
@@ -850,3 +965,23 @@ body{
   border: 1px solid white;
   height: 1.5625em; /*25px / 16px */
 }
+
+/*кнопка возврата вверх*/
+#back-top {
+		position: fixed; /*фиксированное положение кнопки при прокрутки*/
+		opacity: 0.8; /*прозрачность кнопки*/
+		padding: 15px 10px 10px;
+		background: transparent;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		left: 10px;
+		bottom: 10px;
+		display: none; /*блокировка отображения кнопки при загрузке*/
+		cursor: pointer;
+		}
+	#back-top a{
+		width:100%;
+		height: 100%;
+		display:block;
+		text-decoration:none;
+		}
