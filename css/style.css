@@ -868,6 +868,7 @@ body{
 }
 
 .team-cell{
+  position: relative;
   width: 95%;
   margin: 0 auto;
   min-height: 18.125em;/*290px / 16px*/
@@ -878,35 +879,258 @@ body{
   height: auto;
 }
 
+.team-cell .say{
+  display: none;
+  position: absolute;
+  left: 10px;
+  top:120px;
+  width: 220px;
+  height: 160px;
+  background: rgba(109, 246, 235, 0.9);
+}
+
+.team-cell .triangle{
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 95px;
+  border: 10px solid transparent;
+  border-bottom: 17px solid rgba(109, 246, 235, 0.9);
+}
+
+.team-cell:hover .say{
+  display: block;
+  animation: say-animation 1s;
+}
+
+.team-cell:hover .triangle{
+  display: block;
+  animation: triangle-animation 1s;
+}
+
+.team-cell:hover p{
+  display: block;
+  animation: p-animation 1s;
+}
+
+@keyframes say-animation {
+    0% {
+        left: 0px;
+        top: 280px;
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        left: 10px;
+        top:120px;
+        width: 220px;
+        height: 160px;
+    }
+}
+
+@keyframes triangle-animation {
+    0% {
+        left: 0px;
+        top: 260px;
+    }
+    100% {
+        top: 95px;
+        left: 10px;
+    }
+}
+
+@keyframes p-animation {
+    0% {
+        font-size: 0em;
+        left: 0px;
+    }
+
+    50%{
+      font-size: 0em;
+      left:10px;
+    }
+
+    75%{
+      font-size: 0em;
+      left:10px;
+    }
+
+    100% {
+        font-size: 0.75em;/*12px*/
+        left: 10px;
+    }
+}
+
+.say p{
+  display: none;
+  margin: 10px;
+  padding-right: 10px;
+  text-transform: none;
+  font-size: 0.75em;/*12px*/
+  font-weight: normal;
+  color:#272727;
+}
+
+.say p:first-child{
+  text-transform: uppercase;
+  font-size: 0.75em;/*12px*/
+  font-weight: 700;
+}
+
+.say p span{
+  text-transform: none;
+  font-weight: normal;
+  font-style: italic;
+  color: #767070;
+}
+.say p:nth-child(3) span,
+.say p:last-child span{
+  text-transform: none;
+  font-weight: 700;
+  font-style: normal;
+  color: #272727;
+}
+.say p:nth-child(3) span:hover,
+.say p:last-child span:hover{
+  color: #b7b6b6;
+}
+
 .reviews{
   float: left;
   background: #f9fbfb;
-  /*удалить после верстки*/
-  border: 1px solid red;
-  height: 38.75em;/*620px / 16px*/
+  min-height: 38.75em;/*620px / 16px*/
 }
 
 .reviews-headline{
-  margin-top:4.6875em; /*75px / 16px*/
-  margin-bottom: 5.65em; /*100px / 16px*/
-  /*удалить после верстки*/
-  border: 1px solid blue;
-  height: 2.5em; /*40px / 16px*/
+  margin-top:2.8125em; /*45px / 16px*/
+  margin-bottom: 3.125em; /*50px / 16px*/
 }
 
+.reviews-headline h1{
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #505050;
+}
+
+.reviews-headline p{
+  color: #505050;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.reviews-headline p cite{
+  font-style: normal;
+}
+
+.reviews-headline p cite span{
+  font-style: italic;
+  font-size: 0.75em;
+}
 .reviews-gallery{
   float: left;
   margin-left: 1.315789473684211%;
-  /*удалить после верстки*/
-  border: 1px solid green;
-  height: 20.3125em; /*315px / 16px*/
+  background-color: #eaebed;
+}
+
+.reviews-gallery-content:nth-child(2n){
+  background-color: #f4f5f6;
+}
+
+.reviews-gallery-content:hover{
+  background-color: #919292;
+  cursor: pointer;
+}
+
+.reviews-gallery-content:hover  .reviews-profile-icon{
+  background: url("../img/profile_hover.png") no-repeat;
+  background-size: cover;
+  background-position: -5px;
 }
 
 .reviews-content{
-  margin-left: 6.578947368421053%;
-  /*удалить после верстки*/
-  border: 1px solid green;
-  height: 20.3125em; /*315px / 16px*/
+  position: relative;
+  float: right;
+  margin-top: 10px;
+}
+
+.reviews-content-text{
+  position: relative;
+}
+
+.reviews-profile{
+  float: left;
+  margin: 10px 10px 10px 10px;
+  min-height: 90px;
+}
+
+.reviews-content p{
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 10px;
+  text-transform: none;
+  font-size: 0.875em;
+  color: #021623;
+}
+
+.reviews-profile-text-сontent{
+  position: relative;
+}
+
+.reviews-profile-text-date p{
+  color: #747474;
+  font-size: 0.75em;
+  font-style: italic;
+  text-align: right;
+}
+
+.quite-up{
+  position: absolute;
+  top: 0%;
+  left: 1.5%;
+  width: 20px;
+  height: 20px;
+  background: url("../img/quotes.png") no-repeat;
+  background-size: contain;
+  color: black;
+}
+
+.quite-down{
+  position: absolute;
+  top: 100%;
+  left: 95%;
+  width: 20px;
+  height: 20px;
+  background: url("../img/quotes.png") no-repeat;
+  background-size: contain;
+  color: black;
+  transform: rotate(180deg);
+}
+
+.reviews-profile-icon{
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+  background: url("../img/profile.png") no-repeat;
+  background-size: cover;
+  background-position: -5px;
+  min-height: 65px;
+}
+
+.profile-name{
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  left: 0;
+}
+
+.profile-name p{
+  text-align: center;
+  font-size: 0.75em;
+  text-transform: none;
+  color: #021623;
 }
 
 .partners{
@@ -914,7 +1138,7 @@ body{
   background: #ffffff;
   /*удалить после верстки*/
   border: 1px solid green;
-  height: 16.875em; /*260px / 16px*/
+  min-height: 16.875em; /*260px / 16px*/
 }
 
 .contacts{
