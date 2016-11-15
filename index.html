@@ -491,7 +491,18 @@
         </div> -->
         <div id="contacts" class="cols col-12 contacts">
           <div class="container clear-fix">
+            <div class="contacts-headline">
+              <h1>Свяжитесь с нами</h1>
+              <p>Готовы к сотрудничеству? Не стоит медлить!</p>
+            </div>
             <div class="contacts-form">
+              <form>
+                  <input name="name" placeholder="Укажите ваше имя!" class="name" required>
+                  <input name="emailaddress" placeholder="Укажите ваш Email!" class="email" type="email" required>
+                  <input name="phone" placeholder="Укажите контактный телефон!" class="phone" type="phone" required>
+                  <textarea rows="4" cols="50" name="subject" placeholder="Введите ваше сообщение:" class="message" required></textarea>
+                  <input name="submit" class="btn" type="submit" value="Отправить">
+              </form>
             </div>
           </div>
         </div>
