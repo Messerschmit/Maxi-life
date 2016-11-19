@@ -399,7 +399,7 @@ body{
 .say-hello{
   position: relative;
   background: #eff0f2 url("../img/bg_main.jpg") no-repeat;
-  min-height: 29.0625em; /*465px / 16px*/
+  min-height: 32.1875em; /*515px / 16px*/
 }
 
 .main-greeting{
@@ -413,13 +413,15 @@ body{
   color: #505050;
   font-weight: 700;
   font-size: 1.875em;
-  text-shadow: 3px 6px 10px #c4c4c6;
+  -webkit-text-shadow: 3px 6px 7px #999797;
+  	 -moz-text-shadow: 3px 6px 7px #999797;
+          text-shadow: 3px 6px 7px #999797;
 }
 
 .main-greeting .blue-square-top{
   position: absolute;
-  left: 55%;
-  width: 22%; /*160px / 760px*/
+  left: 51%;
+  width: 41%; /*160px / 760px*/
   height: 2.25em; /*36px / 16px*/
   background-color: #b2f2ee;
   opacity: 0.4;
@@ -427,9 +429,19 @@ body{
 
 .main-greeting .blue-square-bottom{
   position: absolute;
-  left: 5.50%;
+  left: 1%;
   top: 2.1875em; /*35px / 16px*/
-  width: 22%; /*160px / 760px*/
+  width: 17%; /*129px / 760px*/
+  height: 2.25em; /*36px / 16px*/
+  background-color: #b2f2ee;
+  opacity: 0.4;
+}
+
+.main-greeting .blue-square-last{
+  position: absolute;
+  left: 40%;
+  top: 4.5em; /*35px / 16px*/
+  width: 20%; /*129px / 760px*/
   height: 2.25em; /*36px / 16px*/
   background-color: #b2f2ee;
   opacity: 0.4;
@@ -439,8 +451,8 @@ body{
 .button {
   display: block;
   position: absolute;
-  top: 23em;/*210px / 16px*/
-  left: 36%;/*250px / 760px*/
+  top: 25em;/*400px / 16px*/
+  left: 35%;/*250px / 760px*/
   margin: .4em;
   padding: 1em;
   cursor: pointer;
