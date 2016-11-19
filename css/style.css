@@ -910,7 +910,7 @@ body{
 
 .team-cell:hover p{
   display: block;
-  animation: p-animation 1s;
+  animation: p-animation 0.8s;
 }
 
 @keyframes say-animation {
