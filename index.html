@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&amp;subset=cyrillic"
           rel="stylesheet">
@@ -16,10 +15,11 @@
       <header class="main-header">
         <div class="container clear-fix">
           <div class="main-logo">
-            <a href="#hello"><img src="img/logo.png" height="125px"></a>
+            <a href="#hello"><img src="img/logo.png" alt="logo"></a>
           </div>
           <nav class="main-menu">
-                <a href="#hello" class="anim-menu">
+            <div class="main-menu-container">
+                <a href="#hello" class="anim-menu current">
                   <span>
                     <span>Главная</span>
                     <span>Главная</span>
@@ -74,6 +74,7 @@
                     <span></span>
                   </span>
                 </a>
+            </div>
           </nav>
         </div>
       </header>
@@ -137,7 +138,6 @@
                       <label for="slide2"></label>
                       <label for="slide3"></label>
                       <label for="slide4"></label>
-                      <label for="slide5"></label>
                   </div>
                   <!--ссылка на точки слайдера-->
                   <div id="active">
@@ -180,26 +180,76 @@
               <h1>Наши работы</h1>
               <p>Мы придадим объем вашим идеям</p>
             </div>
+            <!--модальные окна-->
+            <div class="md-modal md-effect-14" id="modal-1">
+    		    	<div class="md-content">
+                <h3>HI!</h3>
+                <p>Модальное окно 1</P>
+    					  <button class="md-close">Close me!</button>
+    				  </div>
+      			</div><!--конец модального окна-->
+            <div class="md-modal md-effect-14" id="modal-2">
+    		    	<div class="md-content">
+                <h3>HI!</h3>
+                <p>Модальное окно 2</P>
+    					  <button class="md-close">Close me!</button>
+    				  </div>
+      			</div><!--конец модального окна-->
+            <div class="md-modal md-effect-14" id="modal-3">
+    		    	<div class="md-content">
+                <h3>HI!</h3>
+                <p>Модальное окно 3</P>
+    					  <button class="md-close">Close me!</button>
+    				  </div>
+      			</div><!--конец модального окна-->
+            <div class="md-modal md-effect-14" id="modal-4">
+    		    	<div class="md-content">
+                <h3>HI!</h3>
+                <p>Модальное окно 4</P>
+    					  <button class="md-close">Close me!</button>
+    				  </div>
+      			</div><!--конец модального окна-->
+            <div class="md-modal md-effect-14" id="modal-5">
+    		    	<div class="md-content">
+                <h3>HI!</h3>
+                <p>Модальное окно 5</P>
+    					  <button class="md-close">Close me!</button>
+    				  </div>
+      			</div><!--конец модального окна-->
+            <div class="md-modal md-effect-14" id="modal-6">
+    		    	<div class="md-content">
+                <h3>HI!</h3>
+                <p>Модальное окно 6</P>
+    					  <button class="md-close">Close me!</button>
+    				  </div>
+      			</div><!--конец модального окна-->
             <div class="presentation-gallery">
               <div class="cols col-4 collums">
                 <figure class="cell">
+                  <a href="#gallery" class="md-trigger" data-modal="modal-1"></a>
                 </figure>
                 <figure class="cell">
-                </figure>
-              </div>
-              <div class="cols col-4 collums">
-                <figure class="cell">
-                </figure>
-                <figure class="cell">
+                  <a href="#gallery" class="md-trigger" data-modal="modal-2"></a>
                 </figure>
               </div>
               <div class="cols col-4 collums">
                 <figure class="cell">
+                  <a href="#gallery" class="md-trigger" data-modal="modal-3"></a>
                 </figure>
                 <figure class="cell">
+                  <a href="#gallery" class="md-trigger" data-modal="modal-4"></a>
+                </figure>
+              </div>
+              <div class="cols col-4 collums">
+                <figure class="cell">
+                  <a href="#gallery" class="md-trigger" data-modal="modal-5"></a>
+                </figure>
+                <figure class="cell">
+                  <a href="#gallery" class="md-trigger" data-modal="modal-6"></a>
                 </figure>
               </div>
             </div>
+            <div class="md-overlay"></div><!-- the overlay element -->
           </div>
         </div>
         <div id="services" class="cols col-12 services">
@@ -333,7 +383,7 @@
               <h1>Наша команда</h1>
               <p>Мы справимся даже с самыми изысканными пожеланиями наших клиентов</p>
             </div>
-            <div class="team-gallery">
+            <div class="team-gallery clear-fix">
               <div class="cols col-4 team-collums">
                 <figure class="team-cell">
                   <div class="say">
@@ -342,8 +392,8 @@
                     <p>
                       Cкорость моделирования - зависит от точности предоставленных данных.
                     </p>
-                    <p>тел: &nbsp; <span>+3(067)-522-11-45<span></p>
-                    <p>e-mail: &nbsp; <span>sm@maxi-life.in.ua<span></p>
+                    <p>тел: &nbsp; <span>+3(067)-522-11-45</span></p>
+                    <p>e-mail: &nbsp; <span>sm@maxi-life.in.ua</span></p>
                   </div>
                   <div class="triangle"></div>
                   <img src="img/team_1.jpg" alt="команда01">
@@ -357,8 +407,8 @@
                     <p>
                       Быстро, качественно, дешево - выберите 2 важных для Вас пункта.
                     </p>
-                    <p>тел: &nbsp; <span>+3(067)-522-11-45<span></p>
-                    <p>e-mail: &nbsp; <span>sm@maxi-life.in.ua<span></p>
+                    <p>тел: &nbsp; <span>+3(067)-522-11-45</span></p>
+                    <p>e-mail: &nbsp; <span>sm@maxi-life.in.ua</span></p>
                   </div>
                   <div class="triangle"></div>
                   <img src="img/team_2.jpg" alt="команда02">
@@ -371,8 +421,8 @@
                       <span> Маркетинг и реклама</span></p>
                     <p>
                        Лучшее качество по лучшим ценам.
-                    <p>тел: &nbsp; <span>+3(067)-522-11-45<span></p>
-                    <p>e-mail: &nbsp; <span>sm@maxi-life.in.ua<span></p>
+                    <p>тел: &nbsp; <span>+3(067)-522-11-45</span></p>
+                    <p>e-mail: &nbsp; <span>sm@maxi-life.in.ua</span></p>
                   </div>
                   <div class="triangle"></div>
                   <img src="img/team_3.jpg" alt="команда03">
@@ -405,6 +455,7 @@
                   </div>
                   <div class="cols col-2 reviews-profile">
                     <div class="reviews-profile-icon">
+                      <img src="img/profile.png" alt="profile">
                       <div class="profile-name">
                         <p>Иван</p>
                       </div>
@@ -417,8 +468,15 @@
                       <div class="quite-up"></div>
                       <div class="quite-down"></div>
                       <p>
-                          Добрый день всем! Заказывал у этих ребят несколько макетов.
-                          Получилось отлично. Цена и качество очень порадовали.
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
                       </p>
                     </div>
                     <div class="reviews-profile-text-date">
@@ -427,6 +485,7 @@
                   </div>
                   <div class="cols col-2 reviews-profile">
                     <div class="reviews-profile-icon">
+                      <img src="img/profile.png" alt="profile">
                       <div class="profile-name">
                         <p>Алексей</p>
                       </div>
@@ -443,6 +502,15 @@
                           Была приятно удивлена быстротой выполнения заказа.
                           А так же порадовал профессиональный подход,
                           посоветовали как добится желаемого результата.
+                          Lorem ipsum dolor sit amet, consectetur
+                          adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua.
+                          Ut enim ad minim veniam, quis nostrud exercitation
+                          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          Duis aute irure dolor in reprehenderit in voluptate
+                          velit esse cillum dolore eu fugiat nulla pariatur.
+                          Excepteur sint occaecat cupidatat non proident, sunt in
+                          culpa qui officia deserunt mollit anim id est laborum.
                       </p>
                     </div>
                     <div class="reviews-profile-text-date">
@@ -451,6 +519,7 @@
                   </div>
                   <div class="cols col-2 reviews-profile">
                     <div class="reviews-profile-icon">
+                      <img src="img/profile.png" alt="profile">
                       <div class="profile-name">
                         <p>Татьяна</p>
                       </div>
@@ -463,10 +532,33 @@
                       <div class="quite-up"></div>
                       <div class="quite-down"></div>
                       <p>
-                          Делали для меня несколько статуэток.
-                          Была приятно удивлена быстротой выполнения заказа.
-                          А так же порадовал профессиональный подход,
-                          посоветовали как добится желаемого результата.
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
                       </p>
                     </div>
                     <div class="reviews-profile-text-date">
@@ -475,6 +567,7 @@
                   </div>
                   <div class="cols col-2 reviews-profile">
                     <div class="reviews-profile-icon">
+                      <img src="img/profile.png" alt="profile">
                       <div class="profile-name">
                         <p>Саша</p>
                       </div>
@@ -505,7 +598,7 @@
 
                   <input name="name" placeholder="Укажите ваше имя!" class="name" required>
                   <input name="emailaddress" placeholder="Укажите ваш Email!" class="email" type="email" required>
-                  <input name="phone" placeholder="Укажите контактный телефон!" class="phone" type="phone" required>
+                  <input name="phone" placeholder="Укажите контактный телефон!" class="phone" type="tel" required>
                   <textarea rows="4" cols="50" name="subject" placeholder="Введите ваше сообщение:" class="message" required></textarea>
                   <button class="btn">Отправить</button>
               </form>
@@ -534,5 +627,8 @@
       <script type="text/javascript" src="js/scroll.js"></script>
       <script type="text/javascript" src="js/scroll-up.js"></script>
       <script type="text/javascript" src="js/mail.js"></script>
+      <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+      <script src="js/classie.js"></script>
+      <script src="js/modalEffects.js"></script>
     </body>
 </html>
