@@ -871,42 +871,42 @@ body{
   text-transform: none;
 }
 .services-articles .bg-services-1{
-  background: #7d7d7d url("../img/bg-articles1.jpg") no-repeat;
+  background: #7d7d7d url("../img/bg-articles1.jpg");
   background-repeat: repeat;
 
 }
 
 .services-articles .bg-services-2{
-  background: #7d7d7d url("../img/bg-articles2.jpg") no-repeat;
+  background: #7d7d7d url("../img/bg-articles2.jpg");
   background-repeat: repeat;
 
 }
 
 .services-articles .bg-services-3{
-  background: #7d7d7d url("../img/bg-articles3.jpg") no-repeat;
+  background: #7d7d7d url("../img/bg-articles3.jpg");
   background-repeat: repeat;
 
 }
 
 .services-articles .bg-services-4{
-  background: #7d7d7d url("../img/bg-articles4.jpg") no-repeat;
+  background: #7d7d7d url("../img/bg-articles4.jpg");
   background-repeat: repeat;
 
 }
 
 .services-articles .bg-services-5{
-  background: #7d7d7d url("../img/bg-articles5.jpg") no-repeat;
+  background: #7d7d7d url("../img/bg-articles5.jpg");
   background-repeat: repeat;
 
 }
 
 .services-articles .bg-services-6{
-  background: #7d7d7d url("../img/bg-articles6.jpg") no-repeat;
+  background: #7d7d7d url("../img/bg-articles6.jpg");
   background-repeat: repeat;
 
 }
 .even{
-  margin-left: 10px;
+  margin-left: 1.3%;
 }
 
 .services-articles-style h3{
@@ -1724,6 +1724,13 @@ input:focus, textarea:focus {
       }
   }
 
+  .contacts-form{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 0.9375em; /*15px / 16px*/
+    margin-bottom: 0.625em;
+  }
+
   input {
       font-size:14px;
   }
@@ -1734,9 +1741,12 @@ input:focus, textarea:focus {
 }
 
 @media screen and (min-width: 600px) and (max-width: 805px){
-
+  .cols.col-2{width: 100%;}
   .cols.col-4{width: 50%;}
+  .cols.col-5{width: 100%;}
   .cols.col-6{width: 100%;}
+  .cols.col-7{width: 100%;}
+  .cols.col-9{width: 100%;}
 
   .main-header .main-logo{
       float: left;
@@ -1869,4 +1879,107 @@ input:focus, textarea:focus {
     line-height: 19px;
   }
 
+  .services-articles .services-articles-style{
+    position: relative;
+    float: left;
+    margin-top: 0.625em;/*10px / 16px*/
+    text-transform: none;
+    min-height: 17em; /*250px/16px*/
+  }
+
+  .services-articles .bg-services-1{
+    background: #191919;
+  }
+
+  .services-articles .bg-services-2{
+    background: #191919;
+  }
+
+  .services-articles .bg-services-3{
+    background: #191919;
+  }
+
+  .services-articles .bg-services-4{
+    background: #191919;
+  }
+
+  .services-articles .bg-services-5{
+    background: #191919;
+  }
+
+  .services-articles .bg-services-6{
+    background: #191919;
+  }
+
+  .even{
+    margin-left: 0;
+  }
+  .services-articles-style h3{
+    display: inline-block;
+    margin-left: 5.263157894736842%; /*20px / 380px*/
+    padding-right: 3%;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform:uppercase;
+    color: #e7e4e4;
+  }
+
+  .services-articles-style p{
+    margin-top: 0.625em; /*10px / 16px*/
+    margin-left: 5.263157894736842%; /*20px / 380px*/
+    padding-right: 3%;
+    color: #e7e4e4;
+    font-size: 0.8em;
+  }
+
+    .services-articles-style p:last-child{
+      padding-bottom: 0.625em;
+    }
+
+  .bg-services-1 h3{
+    margin-top: 1.25em;
+  }
+
+  .bg-services-2 h3{
+    margin-top: 1.25em;
+  }
+
+  .bg-services-3 h3{
+    margin-top: 1.25em;
+  }
+
+  .bg-services-4 h3{
+    margin-top: 1.25em;
+  }
+
+  .bg-services-5 h3{
+    margin-top: 1.25em;
+  }
+
+  .bg-services-6 h3{
+    margin-top: 5em;
+  }
+
+  .team-gallery .team-collums:last-child{
+    margin-top: 0.625em;
+    margin-left: 25%;
+  }
+
+  .reviews-profile-icon{
+    margin-left: 0;
+    width: 15%;
+  }
+
+  .contacts-form{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0.9375em; /*15px / 16px*/
+    margin-bottom: 0.625em;
+  }
+
+  .footer-social{
+    margin: 0 auto;
+    margin-top: 2em; /*55px / 16px*/
+    width: 65%;
+  }
 }
