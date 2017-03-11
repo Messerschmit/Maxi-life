@@ -1,0 +1,5 @@
+User-agent: * 
+
+Host: http://maxi-life.in.ua/ 
+
+Sitemap: http://maxi-life.in.ua/sitemap.xml 

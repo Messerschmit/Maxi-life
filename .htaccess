@@ -1,0 +1,2 @@
+RewriteCond %{http://www.maxi-life.in.ua/} ^www.site\.com$ [NC]
+RewriteRule ^(.*)$ http://site.com/$1 [R=301,L]

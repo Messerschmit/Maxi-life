@@ -518,7 +518,7 @@ body{
   margin-bottom: 4em; /*80px / 16px*/
 }
 
-.about-us-headline h1{
+.about-us-headline h2{
   display: block;
   margin: 0;
   text-align: center;
@@ -651,7 +651,7 @@ body{
   padding-right:2.631578947368421%; /*10px / 380px*/
 }
 
-.about-us-content-right h2{
+.about-us-content-right h3{
   display: block;
   margin-top: 0.625em; /*10px / 16px*/
   margin-left: 2.631578947368421%; /*10px / 380px*/
@@ -660,7 +660,7 @@ body{
   line-height: 19px;
 }
 
-.about-us-content-right h2:first-child{
+.about-us-content-right h3:first-child{
   margin-top: 1.5em;
 }
 
@@ -693,7 +693,7 @@ body{
   margin-bottom: 3.4375em; /*65px / 16px*/
 }
 
-.presentation-headline h1{
+.presentation-headline h2{
   display: block;
   margin: 0;
   text-align: center;
@@ -843,7 +843,7 @@ body{
   margin-top: 2.8125em; /*45px / 16px*/
 }
 
-.services-headline h1{
+.services-headline h2{
   display: block;
   margin: 0;
   text-align: center;
@@ -981,7 +981,7 @@ body{
   margin-bottom: 5em; /*90px / 16px*/
 }
 
-.team-headline h1{
+.team-headline h2{
   display: block;
   margin: 0;
   text-align: center;
@@ -1118,20 +1118,20 @@ body{
 }
 
 .say p span{
-  text-transform: none;
-  font-weight: normal;
-  font-style: italic;
-  color: #767070;
-}
-.say p:nth-child(3) span,
-.say p:last-child span{
+  cursor: pointer;
   text-transform: none;
   font-weight: 700;
   font-style: normal;
   color: #272727;
 }
-.say p:nth-child(3) span:hover,
-.say p:last-child span:hover{
+.say p:first-child span{
+  text-transform: none;
+  font-weight: normal;
+  font-style: italic;
+  color: #767070;
+}
+
+.say p span:hover{
   color: #b7b6b6;
 }
 
@@ -1146,7 +1146,7 @@ body{
   margin-bottom: 3.125em; /*50px / 16px*/
 }
 
-.reviews-headline h1{
+.reviews-headline h2{
   display: block;
   margin: 0;
   text-align: center;
@@ -1285,7 +1285,7 @@ body{
   margin-bottom: 2em; /*50px / 16px*/
 }
 
-.contacts-headline h1{
+.contacts-headline h2{
   display: block;
   margin: 0;
   text-align: center;
