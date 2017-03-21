@@ -1,7 +1,7 @@
 <?php
 
 $method = $_SERVER['REQUEST_METHOD'];
-	$admin_email = "developer@maxi-life.in.ua";
+	$admin_email = "maxims@maxi-life.in.ua";
 //Script Foreach
 $c = true;
 if ( $method === 'POST' ) {
