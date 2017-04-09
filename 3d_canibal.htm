@@ -1,0 +1,31 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"> </script>
+<script type="text/javascript" src="js/jquery-beono-globus.js"></script>
+
+<style>
+
+.beonoGlobus {
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ width: 100%;
+}
+
+img{
+  width: 1900%;
+}
+
+</style>
+
+<div class="beonoGlobus">
+  <img alt="photo" src="img/canibal_frame.jpg">
+</div>
+
+<script type="text/javascript">
+// Set frames count and get last object
+var obGlobus = $(".beonoGlobus").beonoGlobus({ framesCount: 19, api: "all"});
+
+// Set auto rotation mode
+obGlobus.setRotationMode("auto");
+obGlobus.setRotationSpeed(50);
+obGlobus.rotateLeft();
+</script>
