@@ -193,8 +193,8 @@
               </div>
               </figure>
               <div class="cols col-6 about-us-content-right">
-                <p>Печать по новейшей технологии SLA</p>
-                <p>
+                <p class="article_head">Печать по новейшей технологии SLA</p>
+                <p class="article_content">
                     Мы предоставляем полный спектр услуг 3D печати: анализ
                     3D модели, консультация и адаптация модели для 3D печати,
                     печать модели с последующей обработкой, удалением временных
@@ -227,70 +227,67 @@
             <!--модальные окна-->
             <div class="md-modal md-effect-14" id="modal-1">
     		    	<div class="md-content">
-                <p>Миниатюра "Ждун"</p>
-                <p>Размеры: 4см х 3см х 6см</P>
-    					  <button class="md-close">Х</button>
+                <button class="md-close">X</button>
+                <p>Миниатюра "Predator"</p>
+                <p>Размеры: 5см х 4см х 2см</p>
+                <iframe class="modal_content" src="3d_predator.htm"></iframe>
+                <div class="rotate">
+                  <div class="rotate-left"></div>
+                  <div class="rotate-content">360 &deg</div>
+                  <div class="rotate-right"></div>
+                </div>
     				  </div>
       			</div><!--конец модального окна-->
             <div class="md-modal md-effect-14" id="modal-2">
-    		    	<div class="md-content">
-                <p>HI!</p>
-                <p>Модальное окно 2</P>
-    					  <button class="md-close">Close me!</button>
-    				  </div>
-      			</div><!--конец модального окна-->
-            <div class="md-modal md-effect-14" id="modal-3">
-    		    	<div class="md-content">
-                <p>HI!</p>
-                <p>Модальное окно 3</P>
-    					  <button class="md-close">Close me!</button>
-    				  </div>
-      			</div><!--конец модального окна-->
-            <div class="md-modal md-effect-14" id="modal-4">
-    		    	<div class="md-content">
-                <p>HI!</p>
-                <p>Модальное окно 4</P>
-    					  <button class="md-close">Close me!</button>
-    				  </div>
-      			</div><!--конец модального окна-->
-            <div class="md-modal md-effect-14" id="modal-5">
-    		    	<div class="md-content">
-                <p>HI!</p>
-                <p>Модальное окно 5</P>
-    					  <button class="md-close">Close me!</button>
-    				  </div>
-      			</div><!--конец модального окна-->
-            <div class="md-modal md-effect-14" id="modal-6">
-    		    	<div class="md-content">
-                <p>HI!</p>
-                <p>Модальное окно 6</P>
-    					  <button class="md-close">Close me!</button>
-    				  </div>
-      			</div><!--конец модального окна-->
+              <div class="md-content">
+                <button class="md-close">X</button>
+                <p>Миниатюра "Ждун"</p>
+                <p>Размеры: 4см х 4см х 5см</p>
+                <iframe class="modal_content" src="3d_jdun.htm"></iframe>
+                <div class="rotate">
+                  <div class="rotate-left"></div>
+                  <div class="rotate-content">360 &deg</div>
+                  <div class="rotate-right"></div>
+                </div>
+              </div>
+            </div><!--конец модального окна-->
+
             <div class="presentation-gallery">
               <div class="cols col-4 collums">
                 <figure class="cell">
-                  <a href="#gallery" class="md-trigger" data-modal="modal-1"></a>
+                  <a href="#gallery" class="md-trigger" data-modal="modal-1">
+                    <img class="gallery_preview" src="img/predator.png" alt="predator" >
+                  </a>
                 </figure>
+                <!--
                 <figure class="cell">
                   <a href="#gallery" class="md-trigger" data-modal="modal-2"></a>
                 </figure>
+                -->
               </div>
               <div class="cols col-4 collums">
                 <figure class="cell">
-                  <a href="#gallery" class="md-trigger" data-modal="modal-3"></a>
+                  <a href="#gallery" class="md-trigger" data-modal="modal-2">
+                    <img class="gallery_preview" src="img/jdun.png" alt="predator" >
+                  </a>
                 </figure>
+                <!--
                 <figure class="cell">
                   <a href="#gallery" class="md-trigger" data-modal="modal-4"></a>
                 </figure>
+                -->
               </div>
               <div class="cols col-4 collums">
                 <figure class="cell">
-                  <a href="#gallery" class="md-trigger" data-modal="modal-5"></a>
+                  <a href="#gallery" class="md-trigger" data-modal="modal-3">
+                    <img class="gallery_preview" src="img/ring.png" alt="predator" >
+                  </a>
                 </figure>
+                <!--
                 <figure class="cell">
                   <a href="#gallery" class="md-trigger" data-modal="modal-6"></a>
                 </figure>
+                -->
               </div>
             </div>
             <div class="md-overlay"></div><!-- the overlay element -->
@@ -481,8 +478,6 @@
           <div class="container clear-fix">
             <div class="reviews-headline">
               <h2>Отзывы наших клиентов</h2>
-              <p><cite>Всякий дурно исполненный труд есть та же ложь.
-                Он бесчестен. <span>C. Смайл</span></cite></p>
             </div>
             <div class="cols col-12 reviews-gallery clear-fix">
                 <div class="reviews-gallery-content clear-fix">
